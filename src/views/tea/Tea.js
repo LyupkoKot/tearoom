@@ -18,15 +18,15 @@ const Tea = ({ navigation }) => {
         <View>
           <View style={styles.statBox}>
             <View style={styles.statBox_image}/>
-            <Text style={styles.statBox_label}>{'8 grams'}</Text>
+            <Text style={styles.statBox_label}>{`${tea.portionSize} grams`}</Text>
           </View>
           <View style={styles.statBox}>
             <View style={styles.statBox_image}/>
-            <Text style={styles.statBox_label}>{'93 °C'}</Text>
+            <Text style={styles.statBox_label}>{`${tea.temperatureToCook} °C`}</Text>
           </View>
           <View style={styles.statBox}>
             <View style={styles.statBox_image}/>
-            <Text style={styles.statBox_label}>{'4 minutes'}</Text>
+            <Text style={styles.statBox_label}>{`${tea.timeToCook} minutes`}</Text>
           </View>
         </View>
         <View style={styles.text}>
@@ -34,7 +34,7 @@ const Tea = ({ navigation }) => {
             {tea.title}
           </Text>
           <Text style={styles.text_secondary}>
-            {tea.description}
+            {tea.kind}
           </Text>
         </View>
       </View>
@@ -48,9 +48,9 @@ const Tea = ({ navigation }) => {
         <View style={styles.info_header_line}>{}</View>
         <View style={styles.info_body}>
           <Text style={styles.info_text}>
-            {active === 0 && 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec justo ligula. Phasellus vel euismod nisl, eu dictum leo. Morbi eget molestie erat. Morbi consequat mollis lorem. Nulla cursus mi vitae urna interdum posuere. Donec dapibus efficitur scelerisque. Fusce dapibus posuere dolor, nec sagittis nisi condimentum vitae. Aliquam at ipsum nibh.'}
-            {active === 1 && 'test'}
-            {active === 2 && 'test2'}
+            {active === 0 && tea.description}
+            {active === 1 && tea.tastingNotes}
+            {active === 2 && tea.ingredients}
           </Text>
         </View>
       </View>

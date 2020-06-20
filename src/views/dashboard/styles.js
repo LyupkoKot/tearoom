@@ -42,4 +42,8 @@ export const styles = StyleSheet.create({
     fontWeight: '500',
     marginTop: 30,
   },
+  empty_data_text: {
+    marginTop: 100,
+    marginLeft: 120
+  }
 });

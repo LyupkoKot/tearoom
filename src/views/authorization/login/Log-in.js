@@ -38,6 +38,7 @@ const LogIn = ({ navigation }) => {
           label={"Password"}
           onChange={(pass) => onChangePassword(pass)}
           value={pass}
+          isPassword={true}
         />
       </View>
       <View style={styles.buttonsContainer}>

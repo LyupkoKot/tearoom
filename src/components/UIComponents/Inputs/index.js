@@ -16,6 +16,7 @@ const Input = (props) => {
                {...props}
                value={props.value}
                onChangeText={props.onChange}
+               secureTextEntry={props.isPassword}
            />
         </View>
     );

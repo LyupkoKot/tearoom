@@ -64,7 +64,8 @@ const Preview = ({navigation}) => {
                 <TouchableOpacity onPress={() => handlePress(item.value)}>
                   <View style={styles.nextPlay}>
                     <Image
-                      style={{width: 20, height: 20, backgroundColor: 'black'}}
+                      style={{width: 20, height: 20}}
+                      source={require('../../assets/images/next-play.png')}
                     />
                   </View>
                 </TouchableOpacity>

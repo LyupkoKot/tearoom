@@ -8,7 +8,7 @@ const TeaCardLong = (item) => {
       {/*<Image source={item.image} style={styles.image}/>*/}
       <View style={styles.title}>
         <Text style={styles.label}>{item.title}</Text>
-        <Text>{item.description}</Text>
+        <Text>{item.kind}</Text>
       </View>
     </View>
   );

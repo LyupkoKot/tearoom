@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#F5FCFF",
-    marginTop: 100
+    marginTop: 50
   },
   previewImageContainer: {
     height: 450,
